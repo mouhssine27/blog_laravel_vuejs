@@ -43,7 +43,10 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <div id="app">
+
+  <header id="header" class="header d-flex align-items-center fixed-top" >
+
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
@@ -124,7 +127,8 @@
 
   </header><!-- End Header -->
 
- @yield('content')
+      @yield('content')
+  </div>
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -262,6 +266,7 @@
   <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
 
   <!-- Template Main JS File -->
+  <script src="{{ mix('js/app.js') }}" defer></script>
   <script src="{{ asset('assets/js/main.js') }}"></script>
 
 </body>

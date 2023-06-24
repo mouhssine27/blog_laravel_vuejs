@@ -9,6 +9,7 @@ Home
 @endif
 @endsection
 @section('content')
+
 <main id="main">
     <!-- ======= Hero Slider Section ======= -->
     <section id="hero-slider" class="hero-slider">
